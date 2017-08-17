@@ -1,6 +1,7 @@
 class WelcomeController < ApplicationController
     
     def index
-        puts 'Hola mundo del controlador por consola'
+        @nombre = 'Omar Fernando'
+        @imprimir = true
     end
 end

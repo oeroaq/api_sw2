@@ -1,5 +1,11 @@
 <div>
     <p>
-        hola mundo!!, esto es una vista de hola mundo en index de welcome
+        hola mundo!!, esto es una vista de hola mundo en index de welcome <%=@nombre%>
+        
     </p>
+    <% if @imprimir%>
+    <p>
+        Fecha: <%=Time.now.hour%>
+    </p>
+    <% end %>
 </div>
