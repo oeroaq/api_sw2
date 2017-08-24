@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
-  get '/about',to: 'index#about'
-
-  get '/contact', to: 'index#contact'
-
-  #get '/welcome', to:'welcome#index'
-  root 'welcome#index'
+  resources :users
+  resources :universidads
+  resources :todos
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
